@@ -4,4 +4,11 @@ Web server written in golang combines html, css and js to handle animations in t
 
 Demo ui webserver:
 
++ Login
+
 ![Login](datareadme/login.png)
+
++ Signup
+
+![Signup](datareadme/signup.png)
+

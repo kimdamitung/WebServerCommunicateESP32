@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Golang Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="img/docker.svg" >
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Golang Login Page</title>
 </head>
+
 <body>
 
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" id="signup-sdt" name="sdt" placeholder="Số điện thoại">
+                <input type="password" placeholder="Nhập mật khẩu">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Login</h1>
+                <input type="text" id="login-sdt" name="sdt" placeholder="Số điện thoại">
+                <input type="password" placeholder="Mật khẩu nè">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Có tài khoàn thì quay về mà đăng nhập đi????</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Chưa có tài khoản thì lo đăng kí đi còn dòm đó nữa!!!</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
